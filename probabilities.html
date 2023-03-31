@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="proba.css" />
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <title>MathJ</title>
+    </head>
+    
+    <header>
+        <ul>
+            <a href="https://zeyatsu.github.io/mathj">
+                <li><img id="logo" src="imgs/logo-png.png"/></li>
+            </a>
+        </ul> 
+    </header>
+    
+    <body>
+        <div class="body-c">
+            <img id="img" src="chapters/prob-card.png"/>  
+            <h1>Probabilités</h1>
+        </div>
+
+        <div class="requirements">
+            <h1 id="part">Pré-requis - Vocabulaire</h1>
+            <p id="text">Évènement - Ensemble de résultats possibles d'une expérience aléatoire</p>
+            <p id="text">Issue - Un résultat spécifique qui peut se produire lors d'une expérience aléatoire</p>
+            <p id="text">Expérience - Action/processus pouvant produire différents résultats dont certains, incertains ou aléatoires</p>
+            <p id="text">Univers Ω (omega) - Ensemble de tous les résultats possibles d'une expérience aléatoire donnée </p>
+            <p id="text">On note Ā tout évènement contraire de A</p>
+            <p id="text">La somme des probabilités des évènements doivent être égal à 1.</p>
+            <div class="math">
+                <p id="text">Ainsi on représente sa fréquence par</p>
+                <p><span class="math display">$$\frac{n}{k}$$</span></p>
+            </div>
+            <p id="text">où k est le nombre de fois qu'une issue x se réalise au cours de n expériences identiques.</p>
+        </div>
+
+        <div class="first-part">
+            <h1 id="part">I - Équiprobabilité</h1>
+            <p id="text">Équiprobabilité définit que toutes probabilités des évènements sont égales.</p>
+            <p id="text">Par exemple, dans le pile ou face l'évènement Pile a les mêmes probabilités que l'évènement Face (1/2) </p>
+            <p id="text" class="math"> &frac12; + &frac12; = 1</p>
+            <p id="text">C'est aussi le cas avec un dé, non truqué, puisque la probabilité d'avoir 1 face parmi les 6 est donc de 1/6. <br/>Et donc 1/6 + 1/6 + 1/6 + 1/6 + 1/6 + 1/6 = 6/6 = 1</p>
+        
+            <p id="text" class="space">Un évènement certain a comme probabilté 1. Puisque la probabilité d'un évènement varie toujours entre 0 et 1. <br/> Soit 0 un évènement incertain, 1 un évènement certain (Ω).</p>
+            <p id="text" class="space">Alors, pour tout évènement A, <span id=imp>0 <= p(A) <= 1 </span></p>
+            <div class="math">
+                <p id="text">Pour tous évènements</p>
+                <p id="text"><span id="imp">P(A U B) = P(A) + P(B) - P(A ∩ B)</span></p>
+            </div>
+            <p id="text">Pour tout évènement contraire de A :<span id="imp"> P(Ā) = 1 - P(A)</span></p>
+        </div>
+        <h1 id="part" class="title">Exemple de première partie</h1>
+        <div class="example">
+            <img id="example" src="imgs/prob-example1.png" />
+        </div>
+
+        <div class="first-part">
+            <h1 id="part">II - Probabilités conditionnelles</h1>
+            <p id="text">Des probabilités conditionelles peuvent se représenter avec un arbre pondéré.</p>
+            <p id="text">On notera P<sub>A</sub>(B) l'évènement B sachant A.</p>
+
+            <div class="math">
+                <p id="text">Ainsi</p>
+                <p id="text"><span id="imp">$$P_A(B) = \frac{P(A ∩ B)}{P(A)}$$</span></p>
+            </div>
+
+            <p id="text">Comme dans la première partie, la probabilité de B sachant A est toujours entre 0 et 1.</p>
+            <p id="text">L'évènement contraire est donc la même chose pour B̄...</p>
+
+            <div class="math">
+                <p id="text">Enfin</p>
+                <p id="text"><span id="imp">$$P(A ∩ B) = P(A) * P_A(B)$$</span></p>
+            </div>
+
+            <p id="text">Seulement dans les probabilités conditionelles ce n'est pas la même chose pour calculer la probabilité d'un évènement B.</p>
+            <p id="text">Dans le cas du pile ou face nous avions pu dire que la probabilité de faire face 2 fois de suite est de 1/4 (schéma ci-contre)</p>
+            <div class="example">
+                <img class="ex" src="imgs/prob-appui1.png" />
+            </div>
+            <p id="text">On peut le vérifier en faisant P(A ∩ B) = 0.5 * 0.5 = 0.25... Mais vu que ici c'est équiprobable, On peut juste calculer le nombre de branche </p>
+            
+            <p id="text" class="space">On note que la probabilité de B est égal à la somme des intersections où B y est.</p>
+            <p>Ainsi on ajoute la phrase "A, Ā parition de l'univers</p>
+
+            <div class="math">
+                <p id="text"><span id="imp">$$P(B) = P(A_1 ∩ B) + P(A_2 ∩ B) + ... + P(A_n ∩ B)$$</span></p>
+            </div>
+        </div>
+        <h1 id="part" class="title">Exemple de seconde partie</h1>
+        <div class="example">
+            <img id="example" src="imgs/prob-example2.png" />
+        </div>
+
+
+
+        <div class="conclusion">
+            <h1 id="conclusion">En conclusion: Les formules</h1>
+            <p id="formule">$$0 <= p(A) <= 1$$</p>
+            <p id="formule">$$P(A U B) = P(A) + P(B) - P(A ∩ B)$$</p>
+            <p id="formule">$$P(Ā) = 1 - P(A)$$</p>
+            <p id="formule">$$P_A(B) = \frac{P(A ∩ B)}{P(A)}$$</p>
+            <p id="formule">$$P(A ∩ B) = P(A) * P_A(B)$$</p>
+            <p id="formule">$$P(B) = P(A_1 ∩ B) + P(A_2 ∩ B) + ... + P(A_n ∩ B)$$</p>
+        </div>
+    </body>
+
+    <footer>         
+    </footer>
+
+</html>
