@@ -91,7 +91,7 @@ header {
     margin-left: 10vh;
 }
 #example {
-    width: 80vh;
+    width: 50vh;
 }
 .example {
     
@@ -108,7 +108,13 @@ header {
 }
 
 .conclusion {
+    font-size: 1.5vh;
     color: #4361ee;
     margin-top: 10vh;
     text-align: center;
 }
+
+#ex2 {
+    width: 50vh;
+}
+
