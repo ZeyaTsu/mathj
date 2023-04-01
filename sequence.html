@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="proba.css" />
+        <link rel="icon" type="image/x-icon" href="imgs/logo-png.png">
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+        <title>MathJ</title>
+    </head>
+    
+    <header>
+        <ul>
+            <li><img id="logo" src="imgs/logo-png.png"/></li>
+        </ul> 
+    </header>
+
+    <body>
+        <div class="body-c">
+            <img id="img" src="chapters/seq-card.png"/>  
+            <h1>Suites</h1>
+        </div>
+        
+        <div class="requirements">
+            <h1 id="part">Pré-requis - Vocabulaire</h1>
+            <div class="math">
+                <p id="text">Le nombre Un est appelé le terme de rang n. - Exemple: Rang 1 = </p>
+                <p><span class="math display">$$U_1$$</span></p>
+            </div>           
+        </div>
+
+        <div class="first-part">
+            <h1 id="part">I - Suites explicites et Suites par récurrence</h1>
+            <p id="text">Une suite explicite est définit comme une suite où pour tout terme de rang n, est calculable sans la nécessité du résultat de son rang précédent.</p>
+            <div class="math">
+                <p id="text">Ainsi pour une suite explicite nous avons comme exemple:</p>
+                <p><span class="math display">$$Un = 3n² + 1$$</span></p>
+            </div>
+            <p id="text">Une suite par récurrence est définit comme une suite où pour tout terme de rang n, est nécessaire d'avoir le résultat de son rang précédent afin d'être calculable.</p>
+            <div class="math">
+                <p id="text">Ainsi pour une suite par récurrence nous avons comme exemple:</p>
+                <p><span class="math display">$$Un_+1 = Un + 3$$</span></p>
+            </div>
+        </div>
+
+        <div class="first-part">
+            <h1 id="part">II - Suite arithmétique</h1>
+            <p id="text">On dit qu'une suite est arithmétique si il existe un nombre r tel que, pour tout n :</p>
+            <div class="math">
+                <p><span class="math display">$$U_n = U_0 + n*r$$</span></p>
+            </div>
+            
+            <div class="math">
+                <p id="text">Ainsi, pour prouver qu'une suite est arithmétique, la différence doit être égal à une constante (r).</p>
+                <p><span class="math display">$$Un_+1 - Un = r$$</span></p>
+            </div>
+            <p id="text">Ainsi, il est possible de trouver la raison r d'une suite arithmétique via une équation si l'on possède au moins le résultat de Un d'un autre</p>
+            <div class="math">
+                <p id="text">Sachant que</p>
+                <p>$$Un = U_0 + n*r$$</p>
+                <p id="text">Alors</p>
+                <p>$$\frac{U_n - U_0}{n - 0} = r$$</p>
+            </div>
+            <div class="math">
+                <p id="text">Alors</p>
+                <p>$$U_0 = U_n -n*r$$</p>
+            </div>
+            <p id="text">Afin d'étudier les variations d'une suite arithmétique: <br/> Si r > 0 la suite Un est croissante. <br/> Si r < 0 la suite est décroissante <br/> Si r = 0 la suite est constante.</p>
+            <div class="math">
+                <p id="text">Pour calculer la somme des termes consécutifs d'une suite arithmétique:</p>
+                <p><br/>$$\frac{(U_0 + U_n)*(n+1)}{2}$$</p>
+            </div>
+            
+            <div class="math">
+                <p id="text">Et si la suite des termes est logique comme: 1 + 2 + 3 + ... + n = S, Alors</p>
+                <p><br/>$$\frac{n*(n+1)}{2}$$</p>
+            </div>
+        </div>
+
+        <div class="first-part">
+            <h1 id="part">III - Suite géométrique</h1>
+            <div class="math">
+                <p id="text">On dit qu'une suite est géométrique si il existe un nombre q tel que, pour tout n:</p>
+                <p>$$U_n = U_0 * q^n$$</p>
+            </div>
+            <div class="math">
+                <p id="text">Ainsi, pour prouver qu'une suite est géométrique, le quotient doit être égal à une constante (q).</p>
+                <p>$$\frac{Un_+1}{Un} = q$$</p>
+            </div>
+            <p id="text">Ainsi, il est possible de trouver la raison r d'une suite arithmétique via une équation si l'on possède au moins le résultat de Un d'un autre</p>
+            <div class="math">
+                <p id="text">Sachant que</p>
+                <p>$$U_n = U_0 * q^n$$</p>
+                <p id="text">Alors</p>
+                <p>$$(\frac{U_n}{U_0})^\frac{1}{n} = q$$</p>
+            </div>
+            <div class="math">
+                <p id="text">Alors</p>
+                <p>$$U_0 = \frac{Un}{q^n}$$</p>
+            </div>
+
+            <p id="text">Si q > 1 alors la suite est croissante</p>
+            <p id="text">Si 0 < q < 1 alors la suite est décroissante</p>
+            <p id="text">Si q < 0 alors la suite est monotone</p>
+            <p id="text">Si q = 1 alors la suite est constante</p>
+
+            <div class="math">
+                <p id="text">Pour calculer la somme des termes consécutifs d'une suite géométrique:</p>
+                <p><br/>$$U_0*\frac{1-q^{n+1}}{1-q}$$</p>
+            </div>
+        </div>
+        <a href="https://github.com/ZeyaTsu/mathj/raw/main/imgs/seq-fichrecap.png" target="_blank">
+            <div class="download">
+                <p id="dl">Télécharger la fiche récap</p>
+            </div>
+        </a>
+    </body>
+
+    <footer>         
+    </footer>
+</html>
