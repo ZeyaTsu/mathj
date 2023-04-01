@@ -59,15 +59,21 @@ header {
 }
 
 .requirements, .first-part {
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 #text {
     font-size: 1.5vh;
     line-height: 2.5vh;
 }
 .first-part {
+    display: flex;
     margin-top: 10vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .math {
@@ -91,7 +97,8 @@ header {
     margin-left: 10vh;
 }
 #example {
-    width: 50vh;
+    max-width: 50vh;
+    
 }
 .example {
     
@@ -104,7 +111,7 @@ header {
 }
 
 .ex {
-    width: 40vh;
+    max-width: 40vh;
 }
 
 .conclusion {
@@ -115,6 +122,14 @@ header {
 }
 
 #ex2 {
-    width: 50vh;
+    max-width: 40vh;
 }
 
+.container-ex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
