@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="proba.css" />
+        <link rel="icon" type="image/x-icon" href="imgs/logo-png.png">
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+        <title>MathJ</title>
+    </head>
+    
+    <header>
+        <ul>
+            <a href="https://zeyatsu.github.io/mathj">
+                <li><img id="logo" src="imgs/logo-png.png"/></li>
+            </a>
+        </ul> 
+    </header>
+
+    <body>
+        <div class="body-c">
+            <img id="img" src="chapters/scalaire-card.png"/>  
+            <h1>Produit Scalaire</h1>
+        </div>
+
+        <div class="requirements">
+            <h1 id="part">Pré-requis</h1>
+            <div class="math">
+                <p id="text">Un vecteur</p>
+                <p><span class="math display">$$\overrightarrow{AB}$$ a trois caractéristiques:</span></p>
+            </div>           
+            <p id="text">- Une direction, celle de la droite AB</p>
+            <p id="text">- Un sens, de A vers B</p>
+            <div class="math">
+                <p id="text">- Une norme notée</p>
+                <p><span class="math display">$$||\overrightarrow{AB}||$$ qui est la longueur AB</span></p>
+            </div>   
+            <div class="math">
+                <p id="text">Si A(xA; yA) et si B(xB; yB) alors</p>
+                <p><span class="math display">$$\overrightarrow{AB}(x_B-x_A; y_B-y_A)$$ et $$||\overrightarrow{AB}|| = \sqrt{(x_B-x_A)²+(y_B-y_A)}$$</span></p>
+            </div> 
+            <p id="text">On notera "Vab" un vecteur AB afin de se faciliter.</p>
+        </div>
+
+        <div class="first-part">
+            <h1 id="part">Propriété</h1>
+            <p id="text">Relation de Chasles : Vab + Vbc = Vac</p>
+            <p id="text">Règle du parallélogramme : Vab + Vac = Vad</p>
+            <p id="text">Avec les coordonnéees : Soient Vu(x;y) et Vv(x':y'). Alors Vu + Vv = (x+x'; y+y')</p>
+
+            <p id="text">Le produit d'un vecteur non nul par unb réel k non nul est le vecteur de norme k * ||Vu|| est de même direction que Vu.</p>
+            <p id="text">Si k > 0, ce vecteur est de même sens que Vu</p>
+            <p id="text">Si k < 0, ce vecteur est de sens contraire à Vu</p>
+            <p id="text">Si Vv = kVu, les vecteurs Vu et Vv sont colinéaires.</p>
+            <p id="text">Si Vu(x;y) alors kVu(kx; ky)</p>
+        </div>
+
+        <div class="first-part">
+            <h1 id="part">Produit Scalaire</h1>
+
+            <p id="text">Le produit sclaire des vecteurs Vu et Vv est le nombre réel défini par:</p>
+            <p id="text">Si Vu et Vv sont différents de 0, alors Vu.Vv = AB * AC * cos(BÂC)</p>
+        
+            <h1 id="part">Projection orthogonale</h1>
+            <p id="text">Le projeté orthogonal H d'un point M sur une droite (d) est le point d'intersection de la droite (d) et de la perpendiculaire à (d) passant par M.</p>
+            <p id="text">Soient A, B et C avec A et B distincts, si H est le projeté orthogonal de C sur (AB), alors Vab.Vac = Vab.Vah</p>
+        
+            <h1 id="part">Identités remarquables et formule</h1>
+
+            <p id="text">||Vu+Vv||² = ||Vu||² + ||Vv||² + 2Vu.Vv</p>
+            <p id="text">||Vu-Vv||² = ||Vu||² + ||Vv||² - 2Vu.Vv</p>
+            <p id="text">(Vu +Vv) . (Vu - Vv) = ||Vu||² - ||Vv||²</p>
+            <p id="text">Vu.Vv = 1/2 (||Vu||² + ||Vv||² - || Vu - Vv ||²) = 1/2(||Vu+Vv||²-||Vu||²-||Vv||²)</p>
+            
+            <h1 id="part">Vecteur et norme</h1>
+            <p id="text">Le produit scalaire entre 2 vecteurs Vu(x;y) et Vv(x';y') par les normes sont définis par xx' + yy'</p>
+        
+            <h1 id="part">Théorème d'Al-Kashi (Pythagore généralisé)</h1>
+            <p id="text">ABC est un triangle et on note a = BC, b = AC et c = AB</p>
+            <p id="text">Alors:</p>
+            <p id="text">a² = b² +c² - 2bc cos (A)                                  :</p>
+            <p id="text">b² = a² + c² - 2ac cos (B)</p>
+            <p id="text">c² = a² + b² - 2ab cos (C)</p>
+
+            <h1 id="part">Ensemble de points</h1>
+            <p id="text">On note I le milieu de [AB] <br/> Pour tout point M du plan, on a : </br>Vma.Vmb = MI² - (AB²/4)</p>
+            
+        </div>
+
+
+        <h1 id="part">La fiche récap est pour sûr mieux à regarder que de lire ce chapitre.</h1>
+        <a href="https://github.com/ZeyaTsu/mathj/raw/main/imgs/sca-fichrecap.png" target="_blank">
+            <div class="download">
+                <p id="dl">Télécharger la fiche récap</p>
+            </div>
+        </a>
+    </body>
+
+    <footer>         
+    </footer>
+</html>
